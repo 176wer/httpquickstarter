@@ -1,0 +1,15 @@
+server:
+  port: 9092
+framework:
+  https:
+
+    q4s:
+      listOfServers: localhost:9092,localhost:9091,localhost:9090
+      ServerListRefreshInterval: 10000
+      ReadTimeout: 30000
+      ConnectTimeout: 30000
+    shippingcharge:
+      listOfServers: localhost:9092,localhost:9091
+      ServerListRefreshInterval: 10000
+      ReadTimeout: 10000
+      ConnectTimeout: 10000
